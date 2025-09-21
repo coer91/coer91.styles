@@ -1,0 +1,10 @@
+/* USE BREAKPOINTS */
+@mixin mixin($breakpoint) { 
+    .#{$breakpoint}font-weight-normal { 
+        font-weight: normal !important;
+    }
+
+    .#{$breakpoint}font-weight-bold {
+        font-weight: bold !important;
+    } 
+} 

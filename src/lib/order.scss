@@ -1,0 +1,8 @@
+/* USE BREAKPOINTS */
+@mixin mixin($breakpoint) { 
+    @for $i from 1 through 25 {
+        .#{$breakpoint}order-#{$i} {
+            order: $i !important;
+        }
+    } 
+}

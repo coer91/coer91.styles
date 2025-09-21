@@ -1,0 +1,88 @@
+:root {
+    //Fixed colors
+    --blue:  #0d6efd;
+    --cyan:  #00ffff;
+    --green: #198754;
+    --yellow:#ffc107;
+    --orange:#fd6031; 
+    --red:   #dc3545;
+    --purple:#a615bc;  
+    --dark:  #292929;
+    --gray:  #6c757d;
+    --light: #ffffff; 
+    --smoke: #f5f5f5;
+    --ghost: #f8f8ff;
+
+    //Action Colors
+    --primary:     var(--blue  );
+    --secondary:   var(--gray  ); 
+    --success:     var(--green ); 
+    --warning:     var(--yellow); 
+    --danger:      var(--red   ); 
+    --navigation:  var(--orange); 
+    --information: var(--blue  );  
+
+    //App Colors 
+    --containers:  var(--light); 
+    --breadcrumbs: var(--blue); 
+    --body:        var(--smoke); 
+    --loading:     color-mix(in srgb, var(--gray), var(--light) 50%); 
+    --readonly:    color-mix(in srgb, var(--gray), var(--light) 70%); 
+} 
+
+
+@each $key, $value in ( 
+    //Fixed colors 
+    'transparent': transparent,  
+    'blue'  : var(--blue  ), 
+    'cyan'  : var(--cyan  ), 
+    'green' : var(--green ), 
+    'yellow': var(--yellow), 
+    'orange': var(--orange), 
+    'red'   : var(--red   ), 
+    'purple': var(--purple),
+    'dark'  : var(--dark  ), 
+    'gray'  : var(--gray  ), 
+    'light' : var(--light ),
+    'smoke' : var(--smoke ), 
+    'ghost' : var(--ghost ), 
+
+
+    //Action Colors 
+    'primary'    : var(--primary    ),  
+    'secondary'  : var(--secondary  ),   
+    'success'    : var(--success    ),  
+    'warning'    : var(--warning    ),  
+    'danger'     : var(--danger     ),  
+    'navigation' : var(--navigation ),  
+    'information': var(--information) 
+) {  
+    // Text  
+    .color-#{$key} {  
+        color: $value !important;  
+    } 
+
+    // Backgrounds 
+    .background-color-#{$key} { background-color: $value !important; } 
+    
+    // Outline 
+    .outline-color-#{$key} { outline-color: $value !important; }  
+
+    // Borders 
+    .border-color-#{$key} { border-color: $value !important; }  
+    .border-color-#{$key}-top { border-top-color: $value !important; } 
+    .border-color-#{$key}-right { border-right-color: $value !important; } 
+    .border-color-#{$key}-bottom { border-bottom-color: $value !important; } 
+    .border-color-#{$key}-left { border-left-color: $value !important; }  
+
+    // Borders X - Y 
+    .border-color-#{$key}-y { 
+        border-top-color: $value !important; 
+        border-bottom-color: $value !important; 
+    } 
+    
+    .border-color-#{$key}-x { 
+        border-left-color: $value !important; 
+        border-right-color: $value !important; 
+    } 
+}  

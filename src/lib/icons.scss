@@ -1,0 +1,33 @@
+@mixin Icon() {
+    min-width: 10px !important;
+    min-height: 10px !important; 
+    width: 1em !important;
+    height: 1em !important;
+    mask-size: contain !important; 
+    mask-repeat: no-repeat !important;
+    mask-position: center !important; 
+    display: inline-block !important; 
+    background-color: currentColor !important;
+    position: inherit;
+} 
+
+.i91 {
+    @include Icon();
+}  
+
+.i91-mirror-X {
+    transform: rotateX(180deg) !important;
+} 
+
+.i91-mirror-Y {
+    transform: rotateY(180deg) !important;
+} 
+
+@each $icon in (
+    'alarm', 'alarm-fill'
+) {
+    .i91-#{$icon} { 
+        @include Icon();
+        mask-image: url('./svg/#{$icon}.svg');
+    } 
+} 

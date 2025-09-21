@@ -1,0 +1,17 @@
+.speed-0 {
+    animation-duration: 0.0s !important;
+}
+
+@for $integer from 1 through 10 { 
+    @for $decimals from 1 through 10 {
+        .animation-speed-#{($integer - 1) * 10 + $decimals} {
+            @if($decimals == 10) {
+                animation-duration: #{($integer + 0.0)}s !important;
+            }
+
+            @else {
+                animation-duration: #{($integer - 1) + ($decimals * 0.1)}s !important;
+            }
+        }     
+    }
+}  

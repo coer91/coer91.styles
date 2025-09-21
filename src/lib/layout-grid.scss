@@ -1,0 +1,22 @@
+$colums: 12; 
+
+@mixin mixin($breakpoint) {
+    @for $colum from 1 through $colums {  
+        .#{$breakpoint}grid-#{$colum}-columns { 
+            display: grid !important; 
+            grid-template-columns: repeat($colum, 1fr) !important;
+            margin: 10px;
+            gap: 10px;
+        } 
+
+        @for $span from 1 through ($colums - ($colum - 1)) {
+            .#{$breakpoint}grid-column-#{$colum}-#{$span} {
+                grid-column: $colum / span $span !important;
+            }
+
+            .#{$breakpoint}grid-row-#{$colum}-#{$span} {
+                grid-row: $colum / span $span !important;
+            }
+        } 
+    } 
+}

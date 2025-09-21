@@ -1,0 +1,18 @@
+/* USE BREAKPOINTS */
+@mixin mixin($breakpoint) {  
+    .#{$breakpoint}font-size-small { 
+        font-size: 10px !important; 
+    } 
+
+    .#{$breakpoint}font-size-medium { 
+        font-size: 13px !important; 
+    } 
+
+    .#{$breakpoint}font-size-normal { 
+        font-size: 16px !important; 
+    } 
+
+    .#{$breakpoint}font-size-large { 
+        font-size: 18px !important; 
+    }  
+} 
