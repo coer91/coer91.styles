@@ -7,8 +7,9 @@
     mask-repeat: no-repeat !important;
     mask-position: center !important; 
     display: inline-block !important; 
-    background-color: currentColor !important;
-    position: inherit;
+    background-color: currentColor !important; 
+    vertical-align: text-bottom;
+    font-size: 15px;
 } 
 
 .i91 {
@@ -55,6 +56,7 @@
     'alarm-fill',
     'alarm', 
     'arrow-from-bracket',
+    'arrows-rotate',
     'bars',
     'check',
     'circle',
