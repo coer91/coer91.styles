@@ -17,7 +17,7 @@
     "copy:svg": "xcopy src\\svg dist\\svg /E /I /Y",
     "copy:images": "xcopy src\\images dist\\images /E /I /Y",
     "build": "npm run copy:css && npm run copy:fonts && npm run copy:svg && npm run copy:images",
-    "publish": "npm run build && npm publish --access public"
+    "publish:npm": "npm run build && npm publish --access public"
   },
   "dependencies": {
     "sass": "^1.92.0"

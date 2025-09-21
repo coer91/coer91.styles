@@ -23,8 +23,61 @@
     transform: rotateY(180deg) !important;
 } 
 
+.i91-45deg {
+    transform: rotateZ(45deg) !important;
+}
+
+.i91-90deg {
+    transform: rotateZ(90deg) !important;
+}
+
+.i91-135deg {
+    transform: rotateZ(135deg) !important;
+}
+
+.i91-180deg {
+    transform: rotateZ(180deg) !important;
+}
+
+.i91-225deg {
+    transform: rotateZ(225deg) !important;
+}
+
+.i91-270deg {
+    transform: rotateZ(270deg) !important;
+}
+
+.i91-315deg {
+    transform: rotateZ(315deg) !important;
+}
+
 @each $icon in (
-    'alarm', 'alarm-fill'
+    'alarm-fill',
+    'alarm', 
+    'arrow-from-bracket',
+    'bars',
+    'check',
+    'circle',
+    'datamovil',
+    'door-closed', 
+    'door-open',
+    'house-door-fill',
+    'house-door', 
+    'laptop-code',
+    'list-check',
+    'list-numbers',
+    'list-squares',
+    'list',
+    'lock-fill',
+    'plus',
+    'user-circle-fill',
+    'user-circle',
+    'user-cog-fill',
+    'user-fill',
+    'user-lock-fill',
+    'user-plus-fill', 
+    'user',
+    'users-fill',
 ) {
     .i91-#{$icon} { 
         @include Icon();
