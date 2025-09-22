@@ -89,31 +89,31 @@
     } 
 
     @for $i from 0 through 10 { 
-        @if($i > 0) {
-            .lightning-#{($i * 10) - 5} { 
-                background-color: color-mix(in srgb, $value, var(--light) (($i * 10%) - 5%)) !important;
-            } 
-
-            .lightning-#{($i * 10)} { 
-                background-color: color-mix(in srgb, $value, var(--light) ($i * 10%)) !important;
-            }
-
-            .darkness-#{($i * 10) - 5} { 
-                background-color: color-mix(in srgb, $value, var(--dark) (($i * 10%) - 5%)) !important;
-            }
-
-            .darkness-#{($i * 10)} { 
-                background-color: color-mix(in srgb, $value, var(--dark) ($i * 10%)) !important;
-            }
-        }
-
-        @else {
-            .lightning-5 { 
+        @if($i == 0) {
+            .#{$key}-lightning-5 { 
                 background-color: color-mix(in srgb, $value, var(--light) 5) !important;
             }
 
-            .darkness-5 { 
+            .#{$key}-darkness-5 { 
                 background-color: color-mix(in srgb, $value, var(--dark) 5%) !important;
+            } 
+        }
+
+        @else {
+            .#{$key}-lightning-#{($i * 10) - 5} { 
+                background-color: color-mix(in srgb, $value, var(--light) (($i * 10%) - 5%)) !important;
+            } 
+
+            .#{$key}-lightning-#{($i * 10)} { 
+                background-color: color-mix(in srgb, $value, var(--light) ($i * 10%)) !important;
+            }
+
+            .#{$key}-darkness-#{($i * 10) - 5} { 
+                background-color: color-mix(in srgb, $value, var(--dark) (($i * 10%) - 5%)) !important;
+            }
+
+            .#{$key}-darkness-#{($i * 10)} { 
+                background-color: color-mix(in srgb, $value, var(--dark) ($i * 10%)) !important;
             }
         }
     } 
