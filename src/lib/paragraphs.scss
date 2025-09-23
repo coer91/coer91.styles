@@ -36,4 +36,11 @@
             text-align: $value; 
         }
     } 
+
+
+    @for $i from 0 through 50 {
+        .line-height-#{$i}px { 
+            line-height: $i * 1px !important;
+        } 
+    }
 }
