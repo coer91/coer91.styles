@@ -1,0 +1,59 @@
+@mixin mixin($breakpoint) {
+    
+    //z-index 
+    @for $i from 0 through 10 {
+        .#{$breakpoint}z-index-#{$i} {
+            z-index: $i !important;
+        }
+    } 
+
+
+    //position
+    @each $key, $value in (
+        'static'  : static, 
+        'relative': relative, 
+        'absolute': absolute, 
+        'fixed'   : fixed,
+        'sticky'  : sticky
+    ) {
+        .#{$breakpoint}position-#{$key} { 
+            position: $value !important;
+        } 
+    }   
+
+
+    //
+    @for $i from 0 through 100 {   
+        .#{$breakpoint}top-#{$i}px {
+            top: $i * 1px !important;
+        } 
+
+        .#{$breakpoint}top-negative-#{$i}px {
+            top: $i * -1px !important;
+        } 
+
+        .#{$breakpoint}right-#{$i}px {
+            right: $i * 1px !important;
+        } 
+
+        .#{$breakpoint}right-negative-#{$i}px {
+            right: $i * -1px !important;
+        } 
+    
+        .#{$breakpoint}bottom-#{$i}px {
+            bottom: $i * 1px !important;
+        }
+
+        .#{$breakpoint}bottom-negative-#{$i}px {
+            bottom: $i * -1px !important;
+        }
+
+        .#{$breakpoint}left-#{$i}px {
+            left: $i * 1px !important;
+        } 
+
+        .#{$breakpoint}left-negative-#{$i}px {
+            left: $i * -1px !important;
+        } 
+    } 
+}

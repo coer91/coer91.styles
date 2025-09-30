@@ -23,6 +23,7 @@
 @use "./lib/visibility.scss"       as _visibility;
 @use "./lib/width-height.scss"     as _width-height;   
 @use "./lib/paragraphs.scss"       as _paragraphs;  
+@use "./lib/positions.scss"        as _positions;  
 @use "./lib/order.scss"            as _order;  
 @use "./lib/overflow.scss"         as _overflow; 
 
@@ -41,6 +42,7 @@
     @else if $module == '_visibility'       { @include _visibility.mixin($breakpoint)       }
     @else if $module == '_width-height'     { @include _width-height.mixin($breakpoint)     } 
     @else if $module == '_paragraphs'       { @include _paragraphs.mixin($breakpoint)       }
+    @else if $module == '_positions'        { @include _positions.mixin($breakpoint)        }
     @else if $module == '_order'            { @include _order.mixin($breakpoint)            }  
     @else if $module == '_overflow'         { @include _overflow.mixin($breakpoint)         } 
 } 
@@ -86,5 +88,6 @@
 @include ApplyBreakpoints('_visibility');
 @include ApplyBreakpoints('_width-height'); 
 @include ApplyBreakpoints('_paragraphs');
+@include ApplyBreakpoints('_positions');
 @include ApplyBreakpoints('_order');
 @include ApplyBreakpoints('_overflow');
