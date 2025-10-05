@@ -27,6 +27,7 @@
     --containers:  var(--light); 
     --breadcrumbs: var(--blue ); 
     --body:        var(--smoke); 
+    --hover:       color-mix(in srgb, var(--blue), transparent 90%);
     --loading:     color-mix(in srgb, var(--gray), var(--light) 50%); 
     --readonly:    color-mix(in srgb, var(--gray), var(--light) 70%); 
 } 
