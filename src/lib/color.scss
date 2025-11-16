@@ -1,6 +1,7 @@
 :root {
     //Fixed colors
     --blue:  #0d6efd;
+    --sky:   #0d6efd;
     --cyan:  #00ffff;
     --green: #198754;
     --yellow:#ffc107;
@@ -25,11 +26,12 @@
 
     //App Colors 
     --containers:  var(--light); 
-    --breadcrumbs: var(--blue ); 
+    --breadcrumbs: var(--sky  ); 
     --body:        var(--smoke); 
     --hover:       color-mix(in srgb, var(--blue), transparent 90%);
     --loading:     color-mix(in srgb, var(--gray), var(--light) 50%); 
-    --readonly:    color-mix(in srgb, var(--gray), var(--light) 70%); 
+    --readonly:    color-mix(in srgb, var(--gray), var(--light) 70%);
+    --input:       color-mix(in srgb, var(--gray), var(--light) 85%); 
 } 
 
 

@@ -1,3 +1,7 @@
+.border-radius-inherit {
+    border-radius: inherit !important;
+} 
+
 @for $i from 0 through 50 {
     .border-radius-#{$i}px {
         border-radius: $i * 1px !important;

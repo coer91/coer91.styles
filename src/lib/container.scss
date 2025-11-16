@@ -26,31 +26,25 @@
     border-radius: 10px !important;
     padding: 10px !important;
     font-size: 14px;
-}
-
-
-.loading {
-    cursor: wait !important;  
-    background-color: var(--loading) !important;
-    animation: __KeyOpacity50 0.8s ease-in-out infinite alternate both !important; 
-}
-
-
-.loading-component {
-    position: absolute !important;
-    top: 0px !important;
-    right: 0px !important;
-    bottom: 0px !important;
-    left: 0px !important; 
 } 
 
-
-.readonly {
+.readonly { 
     cursor: default !important; 
     background-color: var(--readonly) !important;
     border-color: var(--readonly) !important;
     box-shadow: none !important;
     color: var(--dark) !important;
+}
+
+.loading {
+    position: absolute !important;
+    top: 0px !important;
+    right: 0px !important;
+    bottom: 0px !important;
+    left: 0px !important;
+    cursor: wait !important;  
+    background-color: var(--loading) !important;
+    animation: __KeyOpacity50 0.8s ease-in-out infinite alternate both !important; 
 }
 
 .caret-none {
