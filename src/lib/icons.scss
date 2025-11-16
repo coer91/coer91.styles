@@ -54,11 +54,19 @@
 
 @each $icon in (
     'alarm-fill',
-    'alarm', 
+    'alarm',
+    'angle-down', 
+    'angle-left',
+    'angle-right',
+    'angle-up',
     'arrow-from-bracket',
     'arrows-rotate',
     'bars',
     'check',
+    'circle-check-fill',
+    'circle-exclamation-fill',
+    'circle-info-fill',
+    'circle-info',
     'circle',
     'datamovil',
     'door-closed', 
@@ -71,7 +79,11 @@
     'list-squares',
     'list',
     'lock-fill',
+    'magnifying-glass',
+    'pen-fill',
     'plus',
+    'trash-can-fill',
+    'trash-can',
     'user-circle-fill',
     'user-circle',
     'user-cog-fill',
@@ -80,6 +92,7 @@
     'user-plus-fill', 
     'user',
     'users-fill',
+    'x',
 ) {
     .i91-#{$icon} { 
         @include Icon();

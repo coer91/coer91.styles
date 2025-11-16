@@ -21,6 +21,17 @@
 
 
 @font-face {
+    font-family: 'OpenSans';
+    src: url('./fonts/open-sans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.font-family-open-sans {
+    font-family: 'OpenSans' !important;
+}
+
+
+@font-face {
     font-family: 'Roboto';
     src: url('./fonts/roboto.ttf') format('truetype');
     font-weight: normal;
