@@ -7,7 +7,7 @@
     border-radius: 8px;
     margin: 15px 30px 0px 30px;
     padding: 10px;
-    min-height: 60px;      
+    min-height: 35px;      
     
     @media (min-width: 0px) and (max-width: 499px) {
         margin: 15px 15px 0px 15px;
@@ -44,7 +44,7 @@
     left: 0px !important;
     cursor: wait !important;  
     background-color: var(--loading) !important;
-    animation: __KeyOpacity50 0.8s ease-in-out infinite alternate both !important; 
+    animation: __KeyOpacity50 0.8s ease-in-out infinite alternate !important; 
 }
 
 .caret-none {

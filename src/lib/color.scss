@@ -28,7 +28,8 @@
     --containers:  var(--light); 
     --breadcrumbs: var(--sky  ); 
     --body:        var(--smoke); 
-    --hover:       color-mix(in srgb, var(--blue), transparent 90%);
+    --hover:       color-mix(in srgb, var(--primary), transparent 93%);
+    --focus:       color-mix(in srgb, var(--primary), transparent 75%);
     --loading:     color-mix(in srgb, var(--gray), var(--light) 50%); 
     --readonly:    color-mix(in srgb, var(--gray), var(--light) 70%);
     --input:       color-mix(in srgb, var(--gray), var(--light) 85%); 
