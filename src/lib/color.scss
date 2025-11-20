@@ -64,13 +64,13 @@
     'information': var(--information),
     
     //App Colors
-    'breadcrumbs' : var(--breadcrumbs    ),  
-    'body'        : var(--body  ),   
-    'hover'       : var(--hover    ),  
-    'focus'       : var(--focus    ),  
+    'breadcrumbs' : var(--breadcrumbs ),  
+    'body'        : var(--body        ),   
+    'hover'       : var(--hover       ),  
+    'focus'       : var(--focus       ),  
     'loading'     : var(--loading     ),  
-    'readonly'    : var(--readonly ),  
-    'input'       : var(--input),
+    'readonly'    : var(--readonly    ),  
+    'input'       : var(--input       ),
 ) {  
     // Text  
     .color-#{$key} {  
