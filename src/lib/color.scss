@@ -33,6 +33,10 @@
     --loading:     color-mix(in srgb, var(--gray), var(--light) 50%); 
     --readonly:    color-mix(in srgb, var(--gray), var(--light) 70%);
     --input:       color-mix(in srgb, var(--gray), var(--light) 85%);  
+
+    //SideNav
+    --sidenav:       var(--dark);
+    --sidenav-color: var(--body);
 } 
 
 
