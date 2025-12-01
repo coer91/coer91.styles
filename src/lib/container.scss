@@ -51,7 +51,7 @@
     caret-color: transparent !important;
 }
 
-
+.no-selection,
 .no-selection::selection {
-    background-color: transparent !important;
-} 
+    user-select: none !important;
+}  

@@ -24,34 +24,12 @@
     transform: rotateY(180deg) !important;
 } 
 
-.i91-45deg {
-    transform: rotateZ(45deg) !important;
-}
-
-.i91-90deg {
-    transform: rotateZ(90deg) !important;
-}
-
-.i91-135deg {
-    transform: rotateZ(135deg) !important;
-}
-
-.i91-180deg {
-    transform: rotateZ(180deg) !important;
-}
-
-.i91-225deg {
-    transform: rotateZ(225deg) !important;
-}
-
-.i91-270deg {
-    transform: rotateZ(270deg) !important;
-}
-
-.i91-315deg {
-    transform: rotateZ(315deg) !important;
-}
-
+@for $i from 0 through 360 { 
+    .i91-#{$i}deg  {
+        transform: rotateZ($i * 1deg) !important;
+    }   
+}  
+ 
 @each $icon in (
     'alarm-fill',
     'alarm',
@@ -59,10 +37,13 @@
     'angle-left',
     'angle-right',
     'angle-up',
+    'arrow-down-sort-asc',
+    'arrow-down-sort-desc',
     'arrow-from-bracket',
     'arrows-rotate',
     'bars',
     'browser-window',
+    'cells',
     'check-square-fill',
     'check-square',
     'check',
@@ -87,9 +68,10 @@
     'filter-fill',
     'filter',
     'floppy-disk-fill',
-    'floppy-disk',
+    'floppy-disk', 
     'grid',
     'grip-vertical',
+    'grip',
     'hash',
     'floppy-disk',
     'house-door-fill',
