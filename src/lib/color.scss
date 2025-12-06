@@ -16,13 +16,13 @@
     --ghost: #f8f8ff;
 
     //Action Colors
-    --primary:     var(--blue  );
-    --secondary:   var(--gray  ); 
-    --success:     var(--green ); 
-    --warning:     var(--yellow); 
-    --danger:      var(--red   ); 
-    --navigation:  var(--orange); 
-    --information: var(--blue  );  
+    --primary:           var(--blue  );
+    --secondary:         var(--gray  ); 
+    --success:           var(--green ); 
+    --warning:           var(--yellow); 
+    --danger:            var(--red   ); 
+    --navigation:        var(--orange); 
+    --information:       var(--blue  );  
     --primary-light:     color-mix(in srgb, var(--primary),     var(--light) 80%);
     --secondary-light:   color-mix(in srgb, var(--secondary),   var(--light) 80%); 
     --success-light:     color-mix(in srgb, var(--success),     var(--light) 80%); 
@@ -39,7 +39,8 @@
     --focus:       color-mix(in srgb, var(--primary), transparent 75%);
     --loading:     color-mix(in srgb, var(--gray), var(--light) 50%); 
     --readonly:    color-mix(in srgb, var(--gray), var(--light) 70%);
-    --input:       color-mix(in srgb, var(--gray), var(--light) 85%);  
+    --input:       color-mix(in srgb, var(--gray), var(--light) 85%);
+    --backdrop:    #5a5a5ae6;  
 
     //SideNav
     --sidenav:       var(--dark);

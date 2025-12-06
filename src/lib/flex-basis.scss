@@ -5,6 +5,7 @@
     @for $i from 0 through 100 {  
         .#{$breakpoint}flex-basis-#{$i} { 
             flex-basis: $i * 1% !important;
+            width: $i * 1% !important;
         }   
     }  
 
@@ -12,10 +13,12 @@
     @for $i from 1 through 10 { 
         .#{$breakpoint}flex-basis-#{($i * 100) - 50}px { 
             flex-basis: ($i * 100px) - 50px !important;
+            width: ($i * 100px) - 50px !important;
         }
 
         .#{$breakpoint}flex-basis-#{($i * 100)}px { 
             flex-basis: ($i * 100px) !important;
+            width: ($i * 100px) !important;
         } 
     }   
 
@@ -28,6 +31,7 @@
 
         .#{$breakpoint}flex-basis-#{$key} {
             flex-basis: $value !important;
+            width: $value !important;
         }
     }     
 }

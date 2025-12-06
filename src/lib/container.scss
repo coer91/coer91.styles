@@ -47,6 +47,11 @@
     animation: __KeyOpacity50 0.8s ease-in-out infinite alternate !important; 
 }
 
+.backdrop {
+    background-color: var(--backdrop) !important;
+    backdrop-filter: blur(1.5px) !important;
+}
+
 .caret-none {
     caret-color: transparent !important;
 }
@@ -54,4 +59,4 @@
 .no-selection,
 .no-selection::selection {
     user-select: none !important;
-}  
+}   
